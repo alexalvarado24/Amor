@@ -1,0 +1,85 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: pink;
+    color: #333;
+}
+
+/* Sección de amor */
+.love, .yes, .no {
+    padding-top: 0; /* Se elimina el padding-top innecesario */
+}
+
+/* Destacar la palabra "amas" */
+.love span {
+    color: red;
+}
+
+/* Texto principal */
+h2 {
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+/* Animación SOLO para la imagen dentro de h2 */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+h2 img {
+    animation: heartbeat 1s infinite;
+}
+
+/* La segunda imagen (love.gif) debe quedar estática */
+.yes img {
+    height: 150px;
+    width: 150px;
+}
+
+/* Estilos para los enlaces (botones) */
+a {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+/* Botón "No" */
+#No {
+    color: red;
+    background: #eee;
+    margin-right: 50px;
+}
+
+#No:hover {
+    background: #ffcccc;
+}
+
+/* Botón "Sí" */
+#Yes {
+    color: green;
+    background: #eee;
+}
+
+#Yes:hover {
+    background: #ccffcc;
+}
