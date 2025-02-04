@@ -51,6 +51,11 @@ h2 img {
     width: 150px;
 }
 
+.valentine img {
+    height: 160px;
+    width: 160px;
+}
+
 /* Estilos para los enlaces (botones) */
 a {
     font-size: 24px;
